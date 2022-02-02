@@ -1,0 +1,7 @@
+FROM python:3.8-slim-buster
+# RUN pip install -g http-server
+WORKDIR /shared
+COPY . .
+
+# EXPOSE 5048
+CMD http-server
